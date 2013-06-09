@@ -14,7 +14,11 @@ public class Driver {
         
         Grid g = new Grid(5,5);
         g.print();
-        
+        AStar a = new AStar(g.getNode(2, 4), g.getNode(0, 3));
+        if (a.search())
+            System.out.println("Path exists!");
+        else
+            System.out.println("Path does not exist!");
     }
     
 }

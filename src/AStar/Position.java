@@ -31,7 +31,13 @@ class Position {
     @Override
     public String toString(){
         
-        return "_" + x + "_,_" + y + "_";
+        return "._" + x + "," + y + "_. ";
+        
+    }
+    
+    public int getCost(){
+        
+        return (x+y);
         
     }
     
